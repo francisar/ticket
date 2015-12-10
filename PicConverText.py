@@ -3,14 +3,6 @@
 # author=evi1m0
 # website=linux.im
 
-'''
-    12306 Captcha Picture:
-    author: Evi1m0@20150316
-        1. Download Captcha
-        2. Pic Conver Text
-        3. Return result
-'''
-
 import re
 import time
 import json
@@ -48,7 +40,7 @@ def ocrApi(filename):
     # Text picture conver text.
     upload_pic_url = "http://cn.docs88.com/pdftowordupload2.php"
     headers_fake = {
-            'ccept': '*/*',
+            'Accept': '*/*',
             'Accept-Encoding': 'gzip, deflate',
             'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',
             'Connection': 'keep-alive',
